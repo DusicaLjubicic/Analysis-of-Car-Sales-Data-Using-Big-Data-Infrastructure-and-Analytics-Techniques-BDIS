@@ -40,6 +40,8 @@ Project Workflow
 2. Database Integration: importing the processed dataset into MongoDB to enable advanced query-based analysis and aggregation.
 3. Query-Based Analysis: exploring relationship between variables, computing summary statistics, and answer research questions through queries using MongoDB aggregations.
 4. Visualization: producing visual interpretatios using Matplotlib and Seaborn.
+5. Apache Spark Analysis: the dataset is processed using Apache Spark (SparkSQL and the DataFrame API) to perform filtering, aggregations, and feature extraction. This approach mirrors the earlier Pandas-based analysis but is optimized for large-scale data. When working with 2.5 million records, Spark shows clear advantages in scalability and performance due to its distributed, in-memory execution model.
+6. SparkML Modeling: an end-to-end machine learning pipeline is implemented using SparkML. The workflow includes data preprocessing, feature encoding and assembly, train–test splitting, and training a regression model to predict car sale prices. Model performance is evaluated using RMSE and R² metrics, providing insight into how well car prices can be predicted from the available features.
 
 
 
